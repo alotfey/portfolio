@@ -1,0 +1,147 @@
+/* ----------------------------------------------------
+CSS for  "Ahmed Lotfey Portfolio"
+
+1. css reset
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: #fff;
+    font-family: 'open Sans', sans-serif ;
+    font-weight: 300;
+    position: relative;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+/* Navbar */
+.topnav {
+    background-color: #262B37;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #C3C8D6;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+}
+.topnav a:hover {
+    background-color: #1B1F29;
+    color: #fff;
+}
+.topnav a.active {
+    background-color: #1B1F29;
+    color: #fff;
+}
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+
+ .banner {
+     position: relative;
+ }
+ .banner img {
+     display: block;
+     width: 100%;
+     max-height: auto;
+ }
+ .banner>.caption {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(23, 22, 22);
+    opacity: 0.6;
+  }
+  
+ .banner>.caption>h1, .banner>.caption>h2 , .banner>.caption>p {
+     text-align: center;
+     padding-top: 20px;
+ }
+ banner>.caption>h1 {
+    font-size: 4vw
+  }
+  
+  .banner>.caption>h2 {
+    font-size: 4vw;
+  }
+  .banner>.caption>p {
+    font-size: 1.5vw;
+    padding: 20px;
+    width: 90%;
+    
+  }
+    /* Skills  */
+   .skills, .education{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #eee;
+    color: #474d5d;
+   }
+   .skills h2 , .experience h2 {
+       text-decoration: underline;
+       color: #FF675F;
+   }
+   .skills p {
+       text-align: center;
+       padding: 10px;
+   }
+    /* experience  */
+   .experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    color: #000;
+   }
+ 
+  /* footer  */
+  footer {
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      background-color: #262B37;
+      flex-wrap: wrap;
+  }
+  .social {
+      margin: 2vw;
+  }
