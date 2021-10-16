@@ -31,6 +31,10 @@ a {
     background-color: #262B37;
     overflow: hidden;
     text-transform: uppercase;
+    z-index: 1200;
+    position: fixed;
+    width: 100%;
+
 }
 .topnav a {
     float: left;
@@ -109,7 +113,7 @@ a {
     width: 90%;
     
   }
-    /* Skills  */
+
    .skills, .education{
     display: flex;
     justify-content: center;
@@ -117,15 +121,16 @@ a {
     background-color: #eee;
     color: #474d5d;
    }
-   .skills h2 , .experience h2 {
+   .skills h2, .experience h2, .education h2{
        text-decoration: underline;
+       font-weight: lighter;
        color: #FF675F;
    }
    .skills p {
        text-align: center;
        padding: 10px;
    }
-    /* experience  */
+   
    .experience {
     display: flex;
     justify-content: center;
