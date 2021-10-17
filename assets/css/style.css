@@ -13,12 +13,6 @@ body {
     color: #fff;
     font-family: 'open Sans', sans-serif ;
     font-weight: 300;
-    position: relative;
-    background: #000;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -55,16 +49,29 @@ a {
 .topnav .icon {
     display: none;
 }
+@media screen and (max-width: 1300px) {
+    .work-img {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .work-img img {
+        width: auto;
+    }
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
+
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
+
+
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 675px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -83,9 +90,9 @@ a {
      position: relative;
  }
  .banner img {
-     display: block;
+     display: flex;
      width: 100%;
-     max-height: auto;
+     max-height: 750px;
  }
  .banner>.caption {
     position: absolute;
@@ -95,13 +102,17 @@ a {
     background: rgb(23, 22, 22);
     opacity: 0.6;
   }
+  .banner>.caption:hover {
+      opacity: 0.8;
+  }
   
  .banner>.caption>h1, .banner>.caption>h2 , .banner>.caption>p {
      text-align: center;
      padding-top: 20px;
  }
- banner>.caption>h1 {
-    font-size: 4vw
+ .banner>.caption>h1 {
+    font-size: 50px;
+    padding-top: 125px;
   }
   
   .banner>.caption>h2 {
@@ -112,33 +123,72 @@ a {
     padding: 20px;
     width: 90%;
     
+  } 
+  .skills {
+      text-align: center;
+      font-size: 2vw;
+      padding-top: 10px;
   }
-
-   .skills, .education{
+   .title {
+    color: #FF675F;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+   } 
+   .pwork, .education{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #eee;
     color: #474d5d;
    }
-   .skills h2, .experience h2, .education h2{
-       text-decoration: underline;
-       font-weight: lighter;
-       color: #FF675F;
+   .pwork{
+       background-image: url(/assets/img/work-bg.jpg);
+       background-size: cover;
    }
-   .skills p {
+ 
+   .pwork p {
        text-align: center;
        padding: 10px;
    }
-   
+ 
+   .work {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   .item-title {
+       color: #000;
+       text-align: center;
+       text-transform: uppercase;
+       z-index: 1200;
+   }
+   .workflex:hover {
+       background-color: #FFF;
+       opacity: 0.9;
+   }
+ 
    .experience {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #fff;
     color: #000;
    }
- 
+ .profile-exp {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ .profile-img {
+    padding-right: 20px;
+ }
+ .exp-text {
+     width: 20%;
+
+ }
   /* footer  */
   footer {
       display: flex;
