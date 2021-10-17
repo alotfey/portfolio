@@ -189,6 +189,9 @@ a {
      width: 20%;
 
  }
+ .seperation {
+     border: 1px solid #262B37;
+ }
   /* footer  */
   footer {
       display: flex;
