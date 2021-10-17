@@ -83,6 +83,10 @@ a {
       display: block;
       text-align: left;
     }
+    .profile-exp {
+        width: 100%;
+        display: flex;
+    }
   }
   
 
@@ -191,6 +195,12 @@ a {
  }
  .seperation {
      border: 1px solid #262B37;
+ }
+ .education {
+     padding: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
  }
   /* footer  */
   footer {
